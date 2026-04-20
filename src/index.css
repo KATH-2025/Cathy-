@@ -69,18 +69,33 @@
   scrollbar-width: none;
 }
 
+/* Custom Scrollbar for Desktop */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .resume-content {
   @apply leading-relaxed tracking-tight text-zinc-800;
 }
 .resume-content p {
-  @apply mb-4 text-[13px] sm:text-[14px];
+  @apply mb-4 text-[13px] sm:text-[14px] lg:text-[15px];
 }
 .resume-content h1, .resume-content h2, .resume-content h3 {
   @apply font-display text-zinc-900 border-b border-zinc-900/10 pb-1;
 }
-.resume-content h1 { @apply text-2xl sm:text-3xl mb-6 mt-8; }
-.resume-content h2 { @apply text-xl sm:text-2xl mb-4 mt-6; }
-.resume-content h3 { @apply text-lg sm:text-xl mb-3 mt-5; }
+.resume-content h1 { @apply text-2xl sm:text-3xl lg:text-4xl mb-6 mt-8; }
+.resume-content h2 { @apply text-xl sm:text-2xl lg:text-3xl mb-4 mt-6; }
+.resume-content h3 { @apply text-lg sm:text-xl lg:text-2xl mb-3 mt-5; }
 .resume-content ul { @apply list-disc ml-5 mb-5 space-y-2; }
-.resume-content li { @apply text-[13px] sm:text-[14px]; }
+.resume-content li { @apply text-[13px] sm:text-[14px] lg:text-[15px]; }
 .resume-content strong { @apply font-semibold text-zinc-900; }
