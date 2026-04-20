@@ -104,7 +104,7 @@ export default function App() {
           id: '02',
           title: '冲浪爱好者',
           links: [
-            { label: '随拍记录--抖音 (数据图)', url: './抖音数据.png', isImg: true },
+            { label: '随拍记录--抖音 (数据图)', url: './douyin.png', isImg: true },
             { label: '爱好剪辑--哔哩哔哩', url: 'https://space.bilibili.com/79995584?spm_id_from=333.1007.0.0' }
           ]
         },
