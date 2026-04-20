@@ -38,7 +38,7 @@ export default function App() {
   const loadResume = async () => {
     setIsLoadingResume(true);
     try {
-      const response = await fetch('/resume.docx');
+      const response = await fetch('./resume.docx');
       const arrayBuffer = await response.arrayBuffer();
       const result = await mammoth.convertToHtml({ arrayBuffer });
       
@@ -104,7 +104,7 @@ export default function App() {
           id: '02',
           title: '冲浪爱好者',
           links: [
-            { label: '随拍记录--抖音 (数据图)', url: '/抖音数据.png', isImg: true },
+            { label: '随拍记录--抖音 (数据图)', url: './抖音数据.png', isImg: true },
             { label: '爱好剪辑--哔哩哔哩', url: 'https://space.bilibili.com/79995584?spm_id_from=333.1007.0.0' }
           ]
         },
@@ -112,8 +112,8 @@ export default function App() {
           id: '03',
           title: '研究记录部分节选',
           links: [
-            { label: '跨境厂商转B2C策略报告 (记录1)', url: '/weccan1.png', isImg: true },
-            { label: '跨境厂商转B2C策略报告 (记录2)', url: '/weccan2.png', isImg: true }
+            { label: '跨境厂商转B2C策略报告 (记录1)', url: './weccan1.png', isImg: true },
+            { label: '跨境厂商转B2C策略报告 (记录2)', url: './weccan2.png', isImg: true }
           ]
         }
       ]
@@ -223,7 +223,7 @@ export default function App() {
                             <div className="p-1 sm:p-2 bg-white shadow-xl transform transition-transform hover:scale-105 duration-300">
                               <div className="relative w-20 h-28 sm:w-24 sm:h-32 md:w-32 md:h-44 overflow-hidden bg-[#D9D9D9]">
                                 <img 
-                                  src="/profile.jpg" 
+                                  src="./profile.jpg" 
                                   alt="CathyG Portrait" 
                                   className="w-full h-full object-cover grayscale-[20%] sepia-[0.1] contrast-[1.05]"
                                   referrerPolicy="no-referrer"
@@ -313,7 +313,7 @@ export default function App() {
                           <motion.a 
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="/resume.docx" 
+                            href="./resume.docx" 
                             download="郭子歆_内容增长方向_简历.docx" 
                             className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 bg-zinc-900 text-white text-[8px] sm:text-[10px] uppercase font-typewriter tracking-widest rounded-full hover:bg-zinc-800 transition-colors"
                           >
